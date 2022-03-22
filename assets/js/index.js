@@ -1,7 +1,10 @@
 $(function() {
+    window.success = function() {
+        getUserInfo();
+    };
     // 调用getUserInfo
-    getUserInfo()
-        // 获取用户的基本信息
+    getUserInfo();
+    // 获取用户的基本信息
     function getUserInfo() {
         $.ajax({
             method: 'GET',
@@ -47,7 +50,7 @@ $(function() {
             $(".text-avater").hide();
         } else {
             $(".layui-nav-img").hide();
-            var first = user.username[0].toUpperCase();
+            var first = name[0].toUpperCase();
             $(".text-avater").html(first);
         }
     }
