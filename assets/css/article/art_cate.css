@@ -1,0 +1,22 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #f2f3f5;
+}
+
+.layui-card-header .layui-btn {
+    position: relative;
+    top: 6px;
+    float: right;
+}
+
+#form_add,
+#form_edit {
+    padding-right: 30px;
+    padding-top: 20px;
+}

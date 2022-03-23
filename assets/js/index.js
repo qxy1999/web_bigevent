@@ -2,6 +2,10 @@ $(function() {
     window.success = function() {
         getUserInfo();
     };
+
+    window.clicklist = function() {
+        $('#art_list').click();
+    };
     // 调用getUserInfo
     getUserInfo();
     // 获取用户的基本信息
